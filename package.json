@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
