@@ -7,7 +7,6 @@
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "test": "jest",
-    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
