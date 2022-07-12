@@ -11,7 +11,7 @@ export const getAndroidVersion = async (storeURL: string = ''): Promise<string> 
     throw new Error('androidStoreURL is invalid.');
   });
 
-  const matches = response.match(/<span class="htlgb"><div class="IQ1z0d"><span class="htlgb">([0-9]+\.?[0-9]*\.?[0-9]*)<\/span><\/div><\/span>/);
+  const matches = response.match(/\[\[\[['"]((\d+\.)+\d+)['"]\]\],/);
 
   if (!matches) {
     throw new Error('can\'t get android app version.');
